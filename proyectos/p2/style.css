@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+}
+.container{
+    padding: 20px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+label{
+    width: 150px;
+}
+input,select{
+    width: 150px;
+    height: 25px;
+    padding: 0 5px;
+    border-radius: 10px;
+    border: 1px solid #000;
+
+}
+input :focus,select:focus{
+    outline: none;
+}
+.btn{
+    padding: 5px 10px;
+    text-transform: uppercase;
+    background-color:rgb(87, 134,177) ;
+    color: #fff;
+    border: 1px solid #fff;
+   font-family:"Open Sans",sans-serif;
+   font-weight: 700;
+   border-radius: 10px;
+}

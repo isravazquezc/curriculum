@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Ejemplo Javascript</h1>
+
+    <p id="texto"></p>
+    <form action="">
+        <div class="form-group">
+        <label for="num1">Numero 1</label>
+        <input type="text"id="numero1" name="numero1" autocomplete="off">
+        </div>
+        <div class="form-group">
+        <label for="num2">Numero 2</label>
+        <input type="text"id="numero2" name="numero2" autocomplete="off">
+        </div>
+        
+        <button class="btn" id="btn-enviar" >Aceptar</button>
+       
+     </form>
+
+     <span>Resultado: </span><span id="resultado"></span>
+     </div>
+    <script type="text/javascript">
+        const p = document.getElementById("texto");
+        p.innerHTML = "Programa para sumar 2 numeros ";
+
+        const  btn =document.getElementById('btn-enviar');
+        btn.addEventListener('click',(e) =>{
+            e.preventDefault();
+           const numero1 = document.getElementById("numero1");
+            const numero2= document.getElementById("numero2");
+            var resultado=parseInt(numero1.value) + parseInt(numero2.value);
+            console.log(resultado);
+            const res=document.getElementById("resultado");
+            res.innerHTML= resultado;
+
+        });
+    </script> 
+</body>
+</html>

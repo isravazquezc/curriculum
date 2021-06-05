@@ -1,0 +1,17 @@
+
+
+.form-control{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.valid{
+    border:1px solid green;
+}
+
+input.error{
+    border: 1px solid red;
+}
+label.error{
+   color:red;
+}

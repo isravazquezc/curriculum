@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>jQuery + bootstrap </title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="mt-2">jQuery + bootstrap</h1>
+        <input type="text" class="form-control mt-2" id="nombre" name="nombre">
+        <button id="btn1" class="btn btn-primary mt-2">Saludo</button>
+        <button id="btn2" class="btn btn-primary mt-2">Mensaje</button>
+        <h2 id="mensaje"></h2>
+
+        <h2 class="mt-2">Validacion de formulario</h2>
+        <form action="" id="form1" method="GET">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre">
+            </div>
+            <div class="mb-3">
+              <label for="edad" class="form-label">Edad</label>
+              <input type="text" class="form-control" id="edad" name="edad">
+            </div>
+            <button type="submit" class="btn btn-primary" value="Enviar">Enviar</button>
+          </form>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/validate/jquery.validate.min.js"></script>
+    <script src="js/validate/localization/messages_es.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

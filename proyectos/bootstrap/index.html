@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
@@ -12,171 +15,310 @@
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
+
+    <style>
+      .banner-image {
+        background-image: url('/img/1.jpg');
+        background-size: cover;
+      }
+    </style>
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Carousel</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-              </ul>
-            </div>
+      <!-- Navbar  -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/img/burguer.svg" alt="" width="30" height="24">
+            la hamburguesa feliz
+          </a>
+          <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white active" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Promos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contacto</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+
+      <!-- Banner Image  -->
+      <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+        <div class="container">
+          <h1 class="text-white">Obten un cashback del 50$</h1>
+          <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, cupiditate veniam.</p>
+          <button type="button" class="btn btn-danger">Obtener</button>
+        </div>
+      </div>
+    </header>
       
       <main>
-      
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="nosotros">
+          <div class="container marketing">
+            <div class="row justify-content-center">
+              <div class="col-4 text-center">
+                <h1 style="font-weight: 700;" class="mt-5">Our chef</h1>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-6">
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum pariatur, nihil accusamus mollitia aperiam libero quidem obcaecati voluptatem? Itaque sunt vitae beatae hic, blanditiis ex. Velit nisi porro at eveniet.</p>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                <h2 style="font-weight: 700;" class="mt-3">ISRAEL VÁZQUEZ</h2>
+                <p class="mb-5">FUNDADOR</p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                <h2 style="font-weight: 700;" class="mt-3">TONY STARK</h2>
+                <p class="mb-5">COFUNDADOR</p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                <h2 style="font-weight: 700;" class="mt-3">PETER PARKER</h2>
+                <p class="mb-5">COFUNDADOR</p>
+              </div><!-- /.col-lg-4 -->
+            </div>
+          </div><!-- /.row -->
+        </div>
+
+        <div class="primer-featurette">
+          <div class="container marketing">
+            <div class="row featurette align-items-center">
+            <div class="col-md-7 order-md-2">
+              <h2 style="font-weight: 700;" class="featurette-heading mt-5">Best Burguer</h2>
+              <p class="lead mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum praesentium suscipit consectetur aperiam quaerat temporibus error natus hic placeat.</p>
+              <button id="primer-btn-f" type="button" class="btn btn-outline-light mt-3">Ordenar ahora</button>
+            </div>
+            <div class="col-md-5 order-md-1 mt-5 mb-5">
+              <img class="featurette img img-fluid mx-auto" width="500" height="500" src="/img/burger.png"></img>  
+            </div>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-      
-              <div class="container">
-                <div class="carousel-caption text-start">
-                  <h1>Example headline.</h1>
-                  <p>Some representative placeholder content for the first slide of the carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-      
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>Another example headline.</h1>
-                  <p>Some representative placeholder content for the second slide of the carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-      
-              <div class="container">
-                <div class="carousel-caption text-end">
-                  <h1>One more for good measure.</h1>
-                  <p>Some representative placeholder content for the third slide of this carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                </div>
-              </div>
-            </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       
-      
-        <!-- Marketing messaging and featurettes
-        ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
-      
-        <div class="container marketing">
-      
-          <!-- Three columns of text below the carousel -->
-          <div class="row">
-            <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-      
-              <h2>Heading</h2>
-              <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-              <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-      
-              <h2>Heading</h2>
-              <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-              <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-      
-              <h2>Heading</h2>
-              <p>And lastly this, the third column of representative placeholder content.</p>
-              <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-          </div><!-- /.row -->
-      
-      
+        <div class="segundo-featurette">
           <!-- START THE FEATURETTES -->
-      
-          <hr class="featurette-divider">
-      
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-              <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-            </div>
-            <div class="col-md-5">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-      
-            </div>
-          </div>
-      
-          <hr class="featurette-divider">
-      
-          <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-              <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-      
+          <div class="container marketing">
+            <div class="row featurette align-items-center">
+              <div class="col-md-7">
+                <h2 style="font-weight: 700;" class="featurette-heading mt-5">Big Burguer</h2>
+                <p class="lead mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum praesentium suscipit consectetur aperiam quaerat temporibus error natus hic placeat.</p>
+                <button id="segundo-btn-f" type="button" class="btn btn-outline-danger mt-3">Ordenar ahora</button>
+              </div>
+              <div class="col-md-5 mt-5 mb-5">
+                <img class="featurette img img-fluid mx-auto" width="500" height="500" src="/img/burger2.png"></img>  
+              </div>
             </div>
           </div>
-      
-          <hr class="featurette-divider">
-      
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-              <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-            </div>
-            <div class="col-md-5">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-      
-            </div>
-          </div>
-      
-          <hr class="featurette-divider">
-      
-          <!-- /END THE FEATURETTES -->
-      
         </div><!-- /.container -->
-      
-      
-        <!-- FOOTER -->
-        <footer class="container">
-          <p class="float-end"><a href="#">Back to top</a></p>
-          <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        </footer>
-      </main>
-      
 
+        <div class="primer-featurette">
+          <div class="container marketing">
+            <div class="row justify-content-center">
+              <div class="col-4 text-center">
+                <h1 style="font-weight: 700;" class="mt-5">Estadisticas</h1>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-6 mt-2">
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum pariatur, nihil accusamus mollitia aperiam libero quidem obcaecati voluptatem.</p>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-4">
+                <span class="dot">
+                  <h1 style="font-weight: 700;" class="display-3">7k</h4>
+                  <h6>Clientes</h6>
+                </span>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <span class="dot">
+                  <h1 style="font-weight: 700;" class="display-3">109</h4>
+                  <h6>Outlets</h6>
+                </span>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <span class="dot">
+                  <h1 style="font-weight: 700;" class="display-3">35</h4>
+                  <h6>Países</h6>
+                </span>
+              </div><!-- /.col-lg-4 -->
+              <p class="mb-5"></p>
+            </div>
+          </div><!-- /.row -->
+        </div>
+
+        <div class="segundo-featurette">
+          <!-- START THE FEATURETTES -->
+          <div class="container marketing">
+            <div class="row justify-content-center">
+              <div class="col-12 text-center">
+                <h1 style="font-weight: 700;" class="mt-5">Paquetes populares</h1>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-12 mt-2">
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum pariatur, nihil accusamus mollitia aperiam libero quidem obcaecati voluptatem.</p>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Paquete 1</h5>
+                    <img src="/img/burger-card.svg" class="mb-3 mt-2" alt="" width="70" height="70">
+                    <h4 style="font-weight: 700; color:#f64b3c" class="card-subtitle mb-2">$30 m.x</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi suscipit reprehenderit, quaerat necessitatibus odio minima.</p>
+                    <a href="#" class="btn btn-outline-danger">Ordenar</a>
+                  </div>
+                </div>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Paquete 2</h5>
+                    <img src="/img/burger-card.svg" class="mb-3 mt-2" alt="" width="70" height="70">
+                    <h4 style="font-weight: 700; color:#f64b3c" class="card-subtitle mb-2">$60 m.x</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi suscipit reprehenderit, quaerat necessitatibus odio minima.</p>
+                    <a href="#" class="btn btn-outline-danger">Ordenar</a>
+                  </div>
+                </div>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Paquete 3</h5>
+                    <img src="/img/burger-card.svg" class="mb-3 mt-2" alt="" width="70" height="70">
+                    <h4 style="font-weight: 700; color:#f64b3c" class="card-subtitle mb-2">$90 m.x</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi suscipit reprehenderit, quaerat necessitatibus odio minima.</p>
+                    <a href="#" class="btn btn-outline-danger">Ordenar</a>
+                  </div>
+                </div>
+              </div><!-- /.col-lg-4 -->
+              <p class="mb-5"></p>
+            </div>
+          </div>
+        </div><!-- /.container -->
+
+        <div class="parallax">
+          <div class="pc">
+            <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+          </div>
+        </div>
+      
+        <div class="segundo-featurette">
+          <!-- START THE FEATURETTES -->
+          <div class="container marketing">
+            <div class="row justify-content-center">
+              <div class="col-12 text-center">
+                <h1 style="font-weight: 700;" class="mt-5">No te pierdas nada!</h1>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-8 mt-2">
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum pariatur, nihil accusamus mollitia aperiam libero quidem obcaecati voluptatem.</p>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-6 offset-2">
+                <label for="inputPassword2" class="visually-hidden">Correo electrónico</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Correo electrónico">
+              </div>
+              <div class="col-4">
+                <button type="submit" class="btn btn-outline-danger mb-3">Confirmar correo</button>
+              </div>
+              <p class="mb-5"></p>
+            </div>
+          </div>
+        </div><!-- /.container -->
+
+        <div class="footer-dark">
+          <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 item text">
+                  <h3>la hamburguesa feliz</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quasi ex nihil rerum qui dolorem eveniet cum, asperiores est laborum. Error autem sed harum eaque voluptatem! Ducimus quam consequatur molestiae?</p>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                  <h3>Productos</h3>
+                  <ul>
+                    <li><a href="#">Paquete 1</a></li>
+                    <li><a href="#">Paquete 2</a></li>                      
+                    <li><a href="#">Paquete 3</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                  <h3>Nosotros</h3>                      
+                  <ul>
+                    <li><a href="#">Compañia</a></li>
+                    <li><a href="#">Equipo</a></li>
+                    <li><a href="#">Trabajos</a></li>
+                  </ul>
+                </div>
+                <div class="col item social">
+                  <a href="#">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#"><i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+              <p class="copyright">Israel Vázquez - 2020</p>
+            </div>
+          </footer>
+        </div>
+      </main>
+
+      <script type="text/javascript">
+        var nav = document.querySelector('nav');
+  
+        window.addEventListener('scroll', function () {
+          if (window.pageYOffset > 100) {
+            nav.classList.add('bg-dark', 'shadow');
+          } else {
+            nav.classList.remove('bg-dark', 'shadow');
+          }
+        });
+      </script>
+
+    <script src="https://kit.fontawesome.com/a6e7e41233.js" crossorigin="anonymous"></script>
+      
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
